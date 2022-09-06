@@ -1,0 +1,22 @@
+{
+  "name": "adivina-cual",
+  "version": "1.0.0",
+  "description": "1. Los siguientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gonzatorte@github.com/gonzatorte/adivina-cual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzatorte/adivina-cual/issues"
+  },
+  "homepage": "https://github.com/gonzatorte/adivina-cual#readme",
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}
