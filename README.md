@@ -12,3 +12,6 @@ API calls, push notifications and everything that comes from outside.
 * Create `.env` file on the root following the `.env.example` file
 * Run project
   * `npm start`
+
+
+ACCEDER A https://adivinalafuncion.strangled.net/

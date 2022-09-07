@@ -26,8 +26,8 @@
     <p style="text-align: center;"><%- question.body %></p>
     <div style="display: flex; flex-direction: row;">
         <% question.answers.forEach(function(answer, idx2, answers){ %>
-        <div style="display: flex; flex-direction: column; flex: 1;">
-            <div style="background-image: url(<%- answer.img %>); background-position: center; background-color: aquamarine; background-size: contain; background-repeat: no-repeat;"></div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <div style="background-image: url(<%- answer.img %>); background-position: center; background-color: aquamarine; background-size: contain; background-repeat: no-repeat; height: 80px; width: 80%; margin-bottom: 20px;"></div>
             <img src="./rsc/img/<%- idx2 + 1 === answers.length ? 'circle-check-solid.svg' : 'circle-xmark-solid.svg' %>" height="16">
         </div>
         <% }); %>

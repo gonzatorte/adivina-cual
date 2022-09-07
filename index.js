@@ -15,7 +15,7 @@ const data = {
           img: './rsc/img/sample.jpg',
         },
         {
-          body: 'O se juega asá',
+          body: 'O de otra manera',
           img: './rsc/img/sample.jpg',
         },
       ],
@@ -24,11 +24,41 @@ const data = {
       body: 'La función tiene raíz 8?',
       answers: [
         {
-          body: 'No tiene',
+          body: 'Raíz 10',
           img: './rsc/img/sample.jpg',
         },
         {
-          body: 'Si tiene',
+          body: 'Raíz 8',
+          img: './rsc/img/sample.jpg',
+        },
+      ],
+    },
+    {
+      body: 'La función tiene ordenada 3?',
+      answers: [
+        {
+          body: 'Ordenada 6',
+          img: './rsc/img/sample.jpg',
+        },
+        {
+          body: 'Ordenada 3',
+          img: './rsc/img/sample.jpg',
+        },
+      ],
+    },
+    {
+      body: 'Es una gráfica?',
+      answers: [
+        {
+          body: 'Es una expresión',
+          img: './rsc/img/sample.jpg',
+        },
+        {
+          body: 'Es una tabla',
+          img: './rsc/img/sample.jpg',
+        },
+        {
+          body: 'Gráfica',
           img: './rsc/img/sample.jpg',
         },
       ],
