@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Adivina la función</title>
+    <style>
+        body {
+            background: #FFFFFF;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+<script type="module"></script>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4KQ_czrjP6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<ol>
+    <% questions.forEach(function(question, idx){ %><li>
+        <a href="#<%- idx %>"><%- question.body %></a>
+    </li><% }); %>
+</ol>
+
+<% questions.forEach(function(question, idx){ %><div id="#<%- idx %>">
+    <p style="text-align: center;"><%- question.body %></p>
+    <div style="display: flex; flex-direction: row;">
+        <% question.answers.forEach(function(answer, idx2, answers){ %>
+        <div style="display: flex; flex-direction: column; flex: 1;">
+            <div style="background-image: url(<%- answer.img %>); background-position: center; background-color: aquamarine; background-size: contain; background-repeat: no-repeat;"></div>
+            <img src="./rsc/img/<%- idx2 + 1 === answers.length ? 'circle-check-solid.svg' : 'circle-xmark-solid.svg' %>" height="16">
+        </div>
+        <% }); %>
+    </div>
+</div><% }); %>
+</body>
+</html>

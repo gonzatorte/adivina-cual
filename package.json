@@ -4,7 +4,8 @@
   "description": "1. Los siguientes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx ejs -p ./template_file.ejs -o ./output.html"
   },
   "repository": {
     "type": "git",
